@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(img1.JPG);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.navbar {
+    padding: 0 18pt;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    top: 0;
+}
+.header{
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+.cont{
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    display: flex;
+}
+
+.logo {
+    padding: 10pt 0;
+    color: white;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.menu {
+    float: left;
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    font-size: 14px;
+    padding: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    background-color: orange;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: lightblue;
+    
+}
+
+.srch {
+    font-family: 'Times New Roman';
+    width: 200px;
+    background: transparent;
+    border: 1px solid lightslategray;
+    color: lightslategrey;
+    border-right: none;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.btn.focus {
+    outline: none;
+}
+
+.srch.focus {
+    outline: none;
+}
+
+.content {
+    width: 500px;
+    color: white;
+    position: relative;
+}
+
+.content .par {
+    padding-top: 25px;
+    font-family: Arial;
+}
+.content .cn {
+    width: 160px;
+    height: 40px;
+    background: lightslategray;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.content .cn a {
+    text-decoration: none;
+    color: black;
+    transition: 3s ease;
+}
+
+.cn:hover {
+    background-color: white;
+}
+.content p{
+    margin-bottom: 24pt;
+}
+
+.sidebar {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.sidebar h3 {
+    color: lightslategrey;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sidebar form {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.sidebar input[type="text"],
+.sidebar input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.sidebar .btn-login {
+    background-color: lightslategrey;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar .btn-login:hover {
+    background-color: lightslategrey;
+}
+
+.sidebar .forgot-password {
+    color: orange;
+    font-size: 14px;
+    text-decoration: none;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    height: 44pt;
+    width: 100%;
+}
